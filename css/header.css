@@ -1,0 +1,100 @@
+@import url("./menu-burger.css");
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 1.6rem 0 1.6rem 0rem;
+  font-size: 1.6rem;
+}
+.header-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-help {
+  width: 16rem;
+}
+.header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-info-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 16rem;
+  padding: 3.8rem 2.4rem;
+}
+.header-info-phone {
+  width: 16rem;
+  text-align: center;
+  font-weight: 600;
+}
+.header__burger {
+  width: 16rem;
+  text-align: center;
+  z-index: 2;
+}
+.header-menu {
+  background-color: var(--main-bg-color);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 6.4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.header-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.header-menu-list__item {
+  text-align: right;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.header-menu-copyright {
+  position: absolute;
+  bottom: 4rem;
+  right: 6.4rem;
+  color: #A6A6A6;
+  font-size: 1.4rem;
+  font-weight: 300;
+}

@@ -1,0 +1,102 @@
+.main {
+  position: relative;
+}
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1280px;
+  height: 100%;
+  margin: auto;
+}
+.main-content > div {
+  width: 33%;
+}
+.main-content__title {
+  font-size: 6.4rem;
+  font-weight: 800;
+}
+.main-content__image {
+  text-align: center;
+  height: 68rem;
+}
+.main-content__image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.main-content__descrp > p {
+  max-width: 400px;
+  font-size: 1.4rem;
+  color: var(--grey);
+  margin-bottom: 2rem;
+}
+.main-content__descrp__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.main-content__descrp__btn > p {
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+.main-lighting {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: -2;
+}
+.main-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  z-index: -2;
+  -webkit-filter: drop-shadow(0px 0px 120px var(--purple));
+          filter: drop-shadow(0px 0px 120px var(--purple));
+}
+.main-background--purple {
+  -webkit-filter: drop-shadow(0px 0px 120px var(--purple));
+          filter: drop-shadow(0px 0px 120px var(--purple));
+}
+.main-background--green {
+  -webkit-filter: drop-shadow(0px 0px 120px var(--green));
+          filter: drop-shadow(0px 0px 120px var(--green));
+}
+.main--purple .main-background {
+  -webkit-filter: drop-shadow(0px 0px 120px var(--purple));
+          filter: drop-shadow(0px 0px 120px var(--purple));
+}
+.main--purple .main-lighting {
+  color: var(--purple);
+}
+.main--green .main-background {
+  -webkit-filter: drop-shadow(0px 0px 120px var(--green));
+          filter: drop-shadow(0px 0px 120px var(--green));
+}
+.main--green .main-lighting {
+  color: var(--green);
+}

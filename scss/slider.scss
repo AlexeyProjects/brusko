@@ -1,0 +1,38 @@
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto !important;
+  height: 100%;
+  display: flex;
+  transition: .8s;
+  z-index: -1;
+  &__item {
+    width: 100vw;
+  }
+
+  &-pagination {
+    transition: .8s;
+    &--disable {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    align-items: center;
+    &__bullet {
+      transition: .8s;
+      margin: 0 2rem;
+      color: #3A3A3A;
+      &--active {
+        transform: scale(1.8);
+        color: #FFFFFF;
+      }
+      &:hover {
+        cursor: pointer
+      }
+    }
+  }
+}

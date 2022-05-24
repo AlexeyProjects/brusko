@@ -1,0 +1,100 @@
+.main {
+  position: relative;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
+    > div {
+      width: 33%;
+    }
+    &__title {
+      font-size: 6.4rem;
+      font-weight: 800;
+    }
+    &__image {
+      text-align: center;
+      height: 68rem;
+      // width: 26.6rem;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    &__descrp {
+      > p {
+        max-width: 400px;
+        font-size: 1.4rem;
+        color: var(--grey);
+        margin-bottom: 2rem;
+      }    
+      &__btn {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        font-weight: 700;
+        > p {
+          text-transform: uppercase;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+  }
+
+  &-lighting {
+    transition: .8s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: -2;
+  }
+
+  &-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .8s;
+    z-index: -2;
+    filter: drop-shadow( 0px 0px 120px var(--purple));
+    
+    &--purple {
+      filter: drop-shadow( 0px 0px 120px var(--purple));
+    }
+
+    &--green {
+      filter: drop-shadow( 0px 0px 120px var(--green) );
+    }
+  } 
+
+  &--purple {
+    .main {
+      &-background {
+        filter: drop-shadow( 0px 0px 120px var(--purple));
+      }
+      &-lighting {
+        color: var(--purple);
+      }
+    }
+  }
+
+  &--green {
+    .main {
+      &-background {
+        filter: drop-shadow( 0px 0px 120px var(--green));
+      }
+      &-lighting {
+        color: var(--green);  
+      }
+    }
+    
+  }
+}
